@@ -1,0 +1,251 @@
+
+.para-font{
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+}
+.para-font-2{
+    font-size: 0.85rem;
+    
+    font-weight: 500;
+}
+.logo{
+    width: 5rem !important;
+    top: -2;
+    
+    position: absolute;
+    transform:translateX(-50%);
+    
+}
+.logo2{
+  width: 2rem !important;
+}
+.search-bar{
+    
+    margin-left: 5rem;
+   
+  width: 40rem;
+    border-radius: 2rem 0rem 0rem 2rem;
+    font-size: 1rem;
+    border: 0.1px solid gray ;
+}
+
+.yt-title{
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.search-btn{
+    
+  padding: 0.5rem 1rem 0.5rem 1rem !important;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+
+.swiper-slide {
+  text-align: center;
+
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+}
+.videos{
+  width: 100%;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.ytr-logo{
+  height: 2.8rem;
+  width: 2.8rem;
+}
+.sdbar-cursor{
+  cursor: pointer;
+}
+#sidemenu{
+  position: fixed;
+  top: 0;
+  left: -20%;
+  width: 20%;
+  height: 100%;
+  
+ overflow: auto;
+  z-index: 100;
+  transition: 0.2s ease-in-out;
+  color: white !important;
+
+}
+#sidemenu.active{
+left: 0;
+}
+
+.btn-color:hover{
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+
+
+
+ /* =======================Scroolbar================= */
+ body::-webkit-scrollbar{
+  width: 0.8rem;
+
+}
+body::-webkit-scrollbar-thumb{
+  background:grey !important;
+  border-radius: 0.7rem ;
+  
+}
+
+
+
+
+ #sidemenu::-webkit-scrollbar{
+  width: 0.8rem;
+
+}
+/* #sidemenu::-webkit-scrollbar-track{
+  background: #000;
+
+  
+} */
+/* ???????????????????????? For 90% ??????????????????????? */
+
+#sidemenu:hover::-webkit-scrollbar-thumb{
+  background:grey !important;
+  border-radius: 0.7rem ;
+  
+}
+ @media only screen and (max-width: 1200px) {
+  .videos{
+    width: 100%;
+    border-radius: 1rem;
+    cursor: pointer;
+
+  }
+  .search-btn{
+    
+    padding: 0rem 0.9rem 0rem 0.8rem !important;
+  }
+
+  .search-bar{
+  width: 50rem !important;
+    border-radius: 2rem 0rem 0rem 2rem;
+    font-size: 0.9rem;
+    border: 0.1px solid gray ;
+}
+#sidemenu{
+  position: fixed;
+  top: 0;
+  left: -25%;
+  width: 25%;
+  height: 100%;
+  
+ overflow: auto;
+  z-index: 100;
+  transition: 0.2s ease-in-out;
+  color: white !important;
+
+}
+#sidemenu.active{
+left: 0;
+}
+
+
+.yt-title{
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+}
+/* ???????????????????????? For 100% ??????????????????????? */
+
+ @media only screen and (max-width: 1100px) {
+  .videos{
+    width: 100%;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+
+  .search-btn{
+    
+    padding: 0rem 0.9rem 0rem 0.8rem !important;
+  }
+
+  .search-bar{
+    
+    
+   
+  width: 50rem !important;
+    border-radius: 2rem 0rem 0rem 2rem;
+    font-size: 0.9rem;
+    border: 0.1px solid gray ;
+};
+#sidemenu{
+  position: fixed;
+  top: 0;
+  left: -22% !important;
+  width: 22% !important;
+  height: 100%;
+  
+ overflow: auto;
+  z-index: 100;
+  transition: 0.2s ease-in-out;
+  color: white !important;
+
+}
+#sidemenu.active{
+left: 0;
+}
+.yt-title{
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+}
+
+
+.prev-btn,.next-btn{
+  position: absolute !important;
+  top: -0.2rem !important; 
+  z-index: 10000;
+  font-size: 2rem !important;
+  cursor: pointer;
+}
+.next-btn{
+  right: 0;
+  padding-left: 1rem;
+}
+.prev-btn{
+  left: 0;
+  padding-right: 1rem;
+}
+.circle{
+  border-radius: 50% !important;
+  color: white !important;
+  width: 3rem;
+  height: 2.7rem;
+  margin-left: 2rem;
+  margin-top: 0.3rem;
+  background: rgba(161, 40, 40,1) !important;
+cursor: pointer;
+font-weight: 600 !important;
+ text-align: center;
+}

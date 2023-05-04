@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nextube</title>
+    <link rel="shortcut icon" href="./images/youtube-vector-logo-png-8.png" type="image/x-icon" >
+    
+    <link rel="stylesheet" href="YT.css">
+    <script src="https://kit.fontawesome.com/66ede70a5a.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+<!-- ====================SIDEBAR=========================== -->
+    <div id="sidemenu" class="bg-white">
+        <div class="container ps-4">
+        <div class="home mb-5 d-flex" style="margin-top: 1rem; ">
+            <a href="#!" class="btn rounded-circle btn-color " id="SB-bar1"> <i class="fa fa-bars fs-4 " ></i></a>
+          <div class="yt ms-2 " >
+            <img src="./images/yt.webp"  class="logo2" alt="" style="width:2.3rem;" >
+            <span class=" fs-5 text-dark" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight: 1000;  ">NexTube&nbsp;<sup class="mt-0" style="font-weight:100; font-size: 1rem;">PK</sup></span>
+          </div>
+            </div>
+            <div class="d-flex flex-column">
+
+                <div class="home d-flex mb-2  align-items-center btn btn-color">
+                    <i class="fa fa-home fs-5"></i>
+                    <span  class="para-font-2 ps-3">Home</span>
+                </div>
+            
+                
+                <div class="home d-flex mb-2  align-items-center btn btn-color ">
+                <img src="/images/shorts.png" width="28">
+                <span class="para-font-2 ps-3">Shorts</span>
+                </div>
+                <div class="home d-flex mb-2  align-items-center btn btn-color">
+                <img src="/images/Subscription.png"width="28">
+                <span class=" para-font-2 ps-3">Subscriptions</span>
+                </div>
+            </div>
+            <center>
+            <hr size="1" width="100%" class="text-dark">
+</center>
+            <div class="d-flex flex-column">
+                
+                <div class="home d-flex mb-2  align-items-center btn btn-color ">
+                    <img src="/images/Library.png" alt="" width="28">
+                <span class="para-font-2 ps-3">Library</span>
+                </div>
+
+                <div class="home d-flex mb-2  align-items-center btn btn-color">
+                    <i class="fa fa-history fs-5 "></i>
+                    <span  class=" para-font-2 ps-4">History</span>
+                </div>
+                
+            
+                <div class="home d-flex mb-2  align-items-center btn btn-color">
+                    <i class="fa fa-youtube fs-5"></i>
+                <span class=" para-font-2 ps-3">Your Videos</span>
+                </div>
+            
+                <div class="home d-flex mb-2  align-items-center btn btn-color">
+                    <i class="fa fa-thumbs-o-up fs-5"></i>
+
+                <span class="para-font-2 ps-3">Liked Videos</span>
+                </div>
+
+                <div class="home d-flex mb-2  align-items-center btn btn-color">
+                    <i class="fa fa-angle-down fs-5"></i>
+
+                <span class="para-font-2 ps-3">Show more..</span>
+                </div>
+            </div>
+
+            <center>
+                <hr size="1" width="100%" class="text-dark">
+    </center>
+
+    <div class="d-flex flex-column">
+                <span class="fs-5 mb-3">Subscription</span>
+        <div class="home d-flex mb-2  align-items-center btn btn-color ">
+            <img src="/images/Ytman" alt="" width="30" height="40" class="rounded-circle">
+        <span class="fs-6  ps-3">CodeWithHarry</span>
+        </div>
+
+
+        <div class="home d-flex mb-2  align-items-center btn btn-color ">
+            <img src="/images/Ytman" alt="" width="30" height="40" class="rounded-circle">
+        <span class="fs-6  ps-3">Yahoo Baba</span>
+        </div>
+
+
+        <div class="home d-flex mb-2  align-items-center btn btn-color ">
+            <img src="/images/Ytman" alt="" width="30" height="40" class="rounded-circle">
+        <span class="fs-6  ps-3">DuckyBhai</span>
+        </div>
+
+
+        <div class="home d-flex mb-2  align-items-center btn btn-color ">
+            <img src="/images/Ytman" alt="" width="30" height="40" class="rounded-circle">
+        <span class="fs-6  ps-3">TechDev</span>
+        </div>
+
+      
+    </div>
+    
+    <center>
+        <hr size="1" width="100%" class="text-dark">
+</center>
+    <div class="d-flex flex-column">
+                <span class="fs-5 mb-3">Explore</span>
+     
+                <div class="home d-flex mb-2  align-items-center btn btn-color">
+                    <i class="fa fa-fire"></i>
+                    <span  class=" para-font-2 ps-4">Trendings</span>
+                </div>
+
+                <div class="home d-flex mb-2  align-items-center btn btn-color">
+                    <i class="fa fa-music"></i>
+                    <span  class=" para-font-2 ps-4">Music</span>
+                </div>
+
+                <div class="home d-flex mb-2  align-items-center btn btn-color">
+                    <i class="fa fa-gamepad "></i>
+                    <span  class=" para-font-2 ps-4">Gaming</span>
+                </div>
+
+                <div class="home d-flex mb-2  align-items-center btn btn-color">
+                    <i class="fa fa-newspaper-o  "></i>
+                    <span  class=" para-font-2 ps-4">News</span>
+                </div>
+                <div class="home d-flex mb-2  align-items-center btn btn-color">
+                    <i class="fa fa-trophy  "></i>
+                    <span  class=" para-font-2 ps-4">Sports</span>
+                </div>
+      
+    </div>
+    
+    <center>
+        <hr size="1" width="100%" class="text-dark">
+</center>
+    <div class="d-flex flex-column">
+                <span class="fs-5 mb-3">More from Youtube</span>
+                <div class="home d-flex mb-2  align-items-center btn btn-color ">
+                    <img src="/images/Yt-ct" alt="" width="30" height="40" class="rounded-circle">
+                <span class="fs-6  ps-3">Creator Studios</span>
+                </div>
+
+                <div class="home d-flex mb-2  align-items-center btn btn-color ">
+                    <img src="/images/Youtube_Music_icon.svg.png" alt="" width="30" height="40" class="rounded-circle">
+                <span class="fs-6  ps-3">Nxt Music</span>
+                </div>
+
+
+                <div class="home d-flex mb-2  align-items-center btn btn-color ">
+                    <img src="/images/yt-kids.png" alt="" width="30" height="40" >
+                <span class="fs-6  ps-3">Nxt Kids</span>
+                </div>
+                <div class="home d-flex mb-2  align-items-center btn btn-color ">
+                    <img src="/images/youtubetv.png" alt="" width="30" height="40" >
+                <span class="fs-6  ps-3">Nxt TV</span>
+                </div>
+              
+      
+    </div>
+    
+    <center>
+        <hr size="1" width="100%" class="text-dark">
+</center>
+    <div class="d-flex flex-column">
+                
+               
+
+                <div class="home d-flex    ">
+                    
+                <span class=" para-font-2 fw-bold text-muted ps-1">About</span>
+                <span class=" para-font-2 fw-bold text-muted ps-1">Press</span>
+                <span class=" para-font-2 fw-bold text-muted ps-1">Copyright</span>
+                </div>
+
+
+                <div class="home d-flex    ">
+                    
+                <span class=" para-font-2 fw-bold text-muted ps-1">Contact Us</span>
+                <span class=" para-font-2 fw-bold text-muted ps-1">Creators</span>
+                
+                </div>
+
+
+                <div class="home d-flex  mb-2  ">
+                    
+                <span class=" para-font-2 fw-bold text-muted ps-1">Advertise</span>
+                <span class=" para-font-2 fw-bold text-muted ps-1">Developers</span>
+                
+                </div>
+
+                <div class="home d-flex    ">
+                    
+                    <span class=" para-font-2 fw-bold text-muted ps-1">Terms</span>
+                    <span class=" para-font-2 fw-bold text-muted ps-1">Privacy</span>
+                    <span class=" para-font-2 fw-bold text-muted ps-1">Policy & Safety</span>
+                </div>
+                <div class="home d-flex    ">
+                    
+                    <span class=" para-font-2 fw-bold text-muted ps-1">How Youtube Works </span>
+                    
+                  
+                </div>
+                <div class="home d-flex    ">
+                    
+                    <span class=" para-font-2 fw-bold text-muted ps-1">Find New Features </span>
+                    
+                  
+                </div>
+
+                <div class="home d-flex   mt-3 ">
+                    
+                    <span class="   text-muted ps-1">&copy; 2023 Google LLC </span>
+                    
+                  
+                </div>
+               
+              
+      
+    </div>
+    
+         
+                      
+              
+            </div>
+        </div>
+        <!-- ==================Sidebar END================ -->
+
+
+    </div>
+<div class="row container-fluid">
+
+    <div class="col-1">
+        <div class="d-flex flex-column sidebar" >
+
+       
+        <div class="home d-flex flex-column justify-content-center align-items-center mb-5">
+       <a href="#!" class="btn rounded-circle btn-color mt-2 "  id="SB-bar"> <i class="fa fa-bars fs-4 p-1" ></i></a>
+        </div>
+<div class="home d-flex flex-column justify-content-center align-items-center mt-3 mb-2 sdbar-cursor">
+    <i class="fa fa-home fs-5"></i>
+    <p  class="para-font">Home</p>
+</div>
+
+<div class="home d-flex flex-column justify-content-center align-items-center my-2 sdbar-cursor">
+<img src="./images/shorts.png" alt="" width="28">
+<p class="para-font">Shorts</p>
+</div>
+<div class="home d-flex flex-column justify-content-center align-items-center my-2 sdbar-cursor">
+<img src="./images/Subscription.png" alt="" width="28">
+<p class="para-font">Subscription</p>
+</div>
+
+<div class="home d-flex flex-column justify-content-center align-items-center my-2 sdbar-cursor">
+<img src="./images/Library.png" alt="" width="28">
+<p class="para-font">Library</p>
+</div>
+</div>
+
+    </div>
+    <div class="col-11 ">
+        
+        <div class="d-flex ">
+        <img src="./images/YtLogo.png"  class="logo" alt="" >
+      <span class=" fs-4  " style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight: 1000; padding-left: 1rem; margin-top: 0.8rem; ">NexTube&nbsp;<sup class="mt-0" style="font-weight:100; font-size: 1rem;">PK</sup></span>
+
+
+      <input type="search" class="search-bar mt-2 ps-3" placeholder="Search ">
+      <button class="search-btn mt-2" style=" border-radius: 0rem 2rem 2rem 0rem; border: 0.1px solid gray ;">
+
+        
+        <i class="fa fa-search fs-5"></i>
+      </button>
+    <div class="  ms-4" style="margin-top: 1rem;">
+        <i class="fa fa-microphone fs-5"></i>
+    </div>
+    <div class="  " style="margin-top: 1rem; margin-left: 5rem;">
+        <img src="./images/videos.png" width="25">
+    </div>
+    <div class="  ms-4 position-relative" style="margin-top: 1rem;">
+        <i class="fa fa-bell-o fs-4">
+        </i>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger p-1">
+            5+
+
+          </span>
+    </div>
+  
+    <button class="btn  circle">
+        <span class="text-white" title="Guest account">G</span>
+    </button>
+</div>
+
+<div class="row mt-4 ">
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#!" class="btn btn-secondary  ms-3" >All</a>
+            
+        </div>
+          <div class="swiper-slide">
+             <a href="#!" class="btn btn-light  " >CWH</a>
+           </div>
+          <div class="swiper-slide"><a href="#!" class="btn btn-light  " >Mixes</a></div>
+          <div class="swiper-slide">
+              <a href="#!" class="btn btn-light " >Songs</a>
+      
+        </div>
+        <div class="swiper-slide">
+            
+            <a href="#!" class="btn btn-light " >Comedy</a>
+        </div>
+        <div class="swiper-slide ms-3">
+            <a href="#!" class="btn btn-light " >Live</a>
+            
+        </div>
+        <div class="swiper-slide">
+            <a href="#!" class="btn btn-light" >Frontend</a>
+            
+        </div>
+        <div class="swiper-slide ms-3">
+            <a href="#!" class="btn btn-light   " >Music</a>
+            
+        </div>
+        <div class="swiper-slide">
+              <a href="#!" class="btn btn-light  " >Pakistan</a>
+            
+          </div>
+        <div class="swiper-slide ms-3">
+              <a href="#!" class="btn btn-light  " >Football</a>
+            
+          </div>
+        <div class="swiper-slide ms-3">
+              <a href="#!" class="btn btn-light  " >Coding</a>
+            
+          </div>
+        <div class="swiper-slide ms-3">
+              <a href="#!" class="btn btn-light  " >PSL</a>
+            
+          </div>
+        <div class="swiper-slide">
+              <a href="#!" class="btn btn-light  " >Cricket</a>
+            
+          </div>
+        <div class="swiper-slide ms-3 ">
+              <a href="#!" class="btn btn-light   " >JsTutorial</a>
+            
+          </div>
+        <div class="swiper-slide ms-4 ">
+              <a href="#!" class="btn btn-light  " >MongoDb</a>
+            
+          </div>
+        <div class="swiper-slide ms-5 ">
+              <a href="#!" class="btn btn-light  " >TailwindCss</a>
+            
+          </div>
+        <div class="swiper-slide ms-5 ">
+              <a href="#!" class="btn btn-light  " >Php</a>
+            
+          </div>
+        <div class="swiper-slide ms-5 ">
+              <a href="#!" class="btn btn-light  " >MERN</a>
+            
+          </div>
+        
+        </div>
+
+
+        <div class="prev-btn">
+            <i class="fa fa-angle-left"></i>
+        </div>
+        <div class="next-btn">
+            <i class="fa fa-angle-right "></i>
+        </div>
+
+      </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row mt-4">
+    <div class="col-lg-4"> 
+           <a href="KKvsISL.html">
+        <video src="./Videos/toss.mp4" poster="./images/1st.jpg" muted  class="videos" ></video></a>
+        <div class="d-flex mt-2">
+            <img src="./images/ytlogo.jpg"  class="ytr-logo rounded-circle pe-1 border border-1 border-dark">
+            <p  class="yt-title">Toss | Karachi Kings vs Islamabad United | Match 4 | HBL PSL 8 |...</p>
+       
+        </div>
+        <p class="ps-5 text-secondary" style="font-weight: 100; margin-top: -0.8rem; font-size: 1rem;">Pakistan Super League <img src="./images/Verification.png" width="15" alt=""></p>
+        <p class="ps-5 text-secondary" style="font-weight: 400; margin-top: -0.8rem; font-size: 1.1rem; ">102k veiws - 1 hour </p>
+
+
+
+        
+    </div>
+    <div class="col-lg-4">
+       <a href="jhon.html">
+         <video src="./Videos/John Wick_ Chapter 4 (2023) Final Trailer – Keanu Reeves, Donnie Yen, Bill Skarsgård.mp4" poster="./images/2nd.jpg" muted  class="videos"></video>     </a>
+        <div class="d-flex mt-2">
+
+   
+            
+            <img src="./images/net.png" class="rounded-circle me-1 border border-1 border-dark ytr-logo">
+            <p class="yt-title">John Wick: Chapter 4 (2023) Final Trailer – Keanu Reeves ...</p>
+   
+        </div>
+    
+        <p class="ps-5 text-secondary" style="font-weight: 100; margin-top: -0.8rem; font-size: 1rem;">Netflix <img src="./images/Verification.png" width="15" alt=""></p>
+        <p class="ps-5 text-secondary" style="font-weight: 400; margin-top: -0.8rem; font-size: 1.1rem; ">4m veiws - 3 day </p>
+    </div>
+
+    <div class="col-lg-4">
+    <a href="test.html">
+         <video src="./Videos/match.mp4" poster="./images/3rd.jpg" muted  class="videos"></video></a>
+    <div class="d-flex mt-2">
+        
+        <img src="./images/prime.png"  class="rounded-circle me-1 ytr-logo">
+        <p class="yt-title">NZ vs Eng | 1st Test Day 1 | Key Moments | Prime Video...</p>
+   
+    </div>
+    <p class="ps-5 text-secondary" style="font-weight: 100; margin-top: -0.8rem; font-size: 1rem;">Prime Video India <img src="./images/Verification.png" width="15" alt=""></p>
+    <p class="ps-5 text-secondary" style="font-weight: 400; margin-top: -0.8rem; font-size: 1.1rem; ">1.1m veiws - 1 day </p>
+    </div>
+
+</div>
+
+
+<div class="row mt-4">
+    <div class="col-lg-4">  
+         <a href="KKvsISL2.html">
+        <video src="./Videos/Short Highlights _ Karachi Kings vs Islamabad United _ Match 4 _ HBL PSL 8 _ MI2T.mp4" poster="./images/1st.jpg" muted  class="videos"></video></a>
+        <div class="d-flex mt-2">
+            <img src="./images/ytlogo.jpg" class="rounded-circle pe-1 border border-1 border-dark ytr-logo">
+            <p class="yt-title">1st Innings Highlights| Karachi Kings vs Islamabad United | HBL...</p>
+       
+        </div>
+        <p class="ps-5 text-secondary" style="font-weight: 100; margin-top: -0.8rem; font-size: 1rem;">Pakistan Super League <img src="./images/Verification.png" width="15" alt=""></p>
+        <p class="ps-5 text-secondary" style="font-weight: 400; margin-top: -0.8rem; font-size: 1.1rem; ">12k veiws - 1 hour </p>
+
+
+
+        
+    </div>
+    <div class="col-lg-4">
+        <a href="bootstrap.html">
+            <video src="./Videos/bootstrap.mp4" poster="./images/boostratp.jpg" muted  class="videos"></video></a>
+        <div class="d-flex mt-2">
+            
+            <img src="./images/coding.png"  class="rounded-circle me-1 ytr-logo">
+
+            <p class="yt-title">Install Bootstrap 4 in VS Code Extension | how to use Boot...</p>
+       
+        </div>
+        <p class="ps-5 text-secondary" style="font-weight: 100; margin-top: -0.8rem; font-size: 1rem;">Learn Tech <img src="Verification.png" width="15" alt=""></p>
+        <p class="ps-5 text-secondary" style="font-weight: 400; margin-top: -0.8rem; font-size: 1.1rem; ">187k veiws - 10 day </p>
+    </div>
+
+
+    <div class="col-lg-4">
+        <a href="song.html">
+            <video src="./Videos/Juice WRLD - Conversations (Lyrics).mp4" poster="./images/song.jpg" muted  class="videos"></video></a>
+    <div class="d-flex mt-2">
+        
+        <img src="./images/songs.avif"  class="rounded-circle me-1 ytr-logo">
+        <p class="yt-title">Mix - Juice WRLD - Conversations (Lyrics)</p>
+   
+    </div>
+    <p class="ps-5 text-secondary" style="font-weight: 100; margin-top: -0.8rem; font-size: 1rem;">Songs Loops <img src="Verification.png" width="15" alt=""></p>
+    <p class="ps-5 text-secondary" style="font-weight: 400; margin-top: -0.8rem; font-size: 1.1rem; ">1b veiws - 1 day </p>
+    </div>
+</div>
+    </div>
+
+
+
+    <!-- ============@ndRow================ -->
+</div>
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 13,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".next-btn",
+        prevEl: ".prev-btn",
+      },
+    });
+
+    const video= document.querySelectorAll('.videos');
+    for (let i = 0; i < video.length; i++) {
+
+         
+
+        
+         video[i].addEventListener('mouseenter',()=>{
+            video[i].play();
+            
+         })
+         video[i].addEventListener('mouseout',()=>{
+            video[i].pause();
+            
+           
+         })
+
+    }
+
+    let sidebar=document.getElementById("SB-bar").addEventListener('click',()=>{
+        document.getElementById("sidemenu").classList.toggle("active");
+    });
+    let sidebar2=document.getElementById("SB-bar1").addEventListener('click',()=>{
+        document.getElementById("sidemenu").classList.toggle("active");
+    });
+  
+
+  
+  </script>
+</body>
+</html>

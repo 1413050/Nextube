@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+.video-player-area{
+    width: 58vw !important;
+    
+    height: 100vh;
+}
+.video-suggestion-area{
+    width: 42vw !important;
+  
+}
+.circle{
+    border-radius: 50% !important;
+    color: white !important;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 2rem;
+    margin-top: 0.3rem;
+    background: rgba(161, 40, 40,1) !important;
+ cursor: pointer;
+ font-weight: 600 !important;
+   text-align: center;
+}
