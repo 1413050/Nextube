@@ -35,7 +35,7 @@
             <a href="#!" class="btn rounded-circle btn-color mt-1 "  id="SB-bar"> <i class="fa fa-bars fs-3 p-1 text-white" ></i></a>
              
             <img src="./images/yt.webp"width="30" height="25" alt="" class="mt-3">
-          <a href="./Youtube.html" class=" fs-4  ps-1 text-decoration-none text-white" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight: 1000;  margin-top: 0.8rem; "> NexTube<sup class="mt-0" style="font-weight:100; font-size: 1rem;">PK</sup></a>
+          <a href="./index.html" class=" fs-4  ps-1 text-decoration-none text-white" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight: 1000;  margin-top: 0.8rem; "> NexTube<sup class="mt-0" style="font-weight:100; font-size: 1rem;">PK</sup></a>
     
     
           <input type="search" class="search-bar mt-2 ps-3 bg-transparent" placeholder="Search ">
@@ -67,6 +67,7 @@
 </div>
 </div>
     <!-- ====================SIDEBAR=========================== -->
+    <div class="bg-sidebar"></div>
     <div id="sidemenu" class="bg-black">
         <div class="container ps-4 ">
         <div class="home mb-5 d-flex" style="margin-top: 1rem; ">
@@ -298,7 +299,7 @@
 <!-- /////////////////// Video \\\\\\\\\\\\\\\\\\\\\\\\\ -->
 <div class="row d-flex justify-content-center align-items-center">
 <div class="col">
-    <video src="./Videos/Short Highlights _ Karachi Kings vs Islamabad United _ Match 4 _ HBL PSL 8 _ MI2T.mp4" controls autoplay muted style="width: 56.4vw;"></video>
+    <iframe style="width: 56.4vw;"height="405" src="https://www.youtube.com/embed/378F0ZADLOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 </div>
 
@@ -702,9 +703,11 @@
 
     let sidebar=document.getElementById("SB-bar").addEventListener('click',()=>{
         document.getElementById("sidemenu").classList.toggle("active");
+        document.querySelector('.bg-sidebar').style.display="block";
     });
     let sidebar2=document.getElementById("SB-bar1").addEventListener('click',()=>{
-        document.getElementById("sidemenu").classList.remove("active");
+        document.getElementById("sidemenu").classList.toggle("active");
+        document.querySelector('.bg-sidebar').style.display="none";
     });
   
 

@@ -14,6 +14,7 @@
 </head>
 <body>
 <!-- ====================SIDEBAR=========================== -->
+<div class="bg-sidebar"></div>
     <div id="sidemenu" class="bg-white">
         <div class="container ps-4">
         <div class="home mb-5 d-flex" style="margin-top: 1rem; ">
@@ -501,43 +502,62 @@
      <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05E4=" crossorigin="anonymous"></script>
+
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 13,
-      spaceBetween: 30,
-      navigation: {
-        nextEl: ".next-btn",
-        prevEl: ".prev-btn",
-      },
-    });
-
-    const video= document.querySelectorAll('.videos');
-    for (let i = 0; i < video.length; i++) {
-
-         
-
-        
-         video[i].addEventListener('mouseenter',()=>{
-            video[i].play();
-            
-         })
-         video[i].addEventListener('mouseout',()=>{
-            video[i].pause();
-            
-           
-         })
-
-    }
-
-    let sidebar=document.getElementById("SB-bar").addEventListener('click',()=>{
-        document.getElementById("sidemenu").classList.toggle("active");
-    });
-    let sidebar2=document.getElementById("SB-bar1").addEventListener('click',()=>{
-        document.getElementById("sidemenu").classList.toggle("active");
-    });
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 13,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".next-btn",
+          prevEl: ".prev-btn",
+        },
+      });
   
+      const video = document.querySelectorAll('.videos');
+      for (let i = 0; i < video.length; i++) {
+          video[i].addEventListener('mouseenter', () => {
+              video[i].play();
+          });
+          video[i].addEventListener('mouseout', () => {
+              video[i].pause();
+          });
+      }
+  
+  
+ 
+      $(document).ready(function() {
+          // Get all video elements
+          const videos = $('.videos');
+  
+          // Function to filter videos based on search input
+          function filterVideos(searchText) {
+              searchText = searchText.toLowerCase();
+              videos.each(function() {
+                  const videoTitle = $(this).siblings('.yt-title').text().toLowerCase();
+                  if (videoTitle.includes(searchText)) {
+                      $(this).parent().fadeIn();
+                  } else {
+                      $(this).parent().fadeOut();
+                  }
+              });
+          }
+  
+          // Handle search input changes
+          $('.search-bar').on('input', function() {
+              const searchText = $(this).val();
+              filterVideos(searchText);
+          });
+  
+          // Clear search input and show all videos when the search button is clicked
+          $('.search-btn').on('click', function() {
+              $('.search-bar').val('');
+              filterVideos('');
+          });
+      });
 
+    
   
   </script>
 </body>
